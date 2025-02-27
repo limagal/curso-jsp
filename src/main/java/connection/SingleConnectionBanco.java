@@ -5,12 +5,11 @@ import java.sql.DriverManager;
 
 public class SingleConnectionBanco {
 
-	//private static String DRIVER = "org.postgressql.Driver";
+	private static String DRIVER = "org.postgressql.Driver";
 	private static String banco = "jdbc:postgresql://localhost:5432/curso-jspautoReconnect=true";
 	private static String user = "postgres";
 	private static String password = "yyz0910";
 	private static Connection connection = null;
-
 	public static Connection getConnection() {
 		return connection;
 	}
