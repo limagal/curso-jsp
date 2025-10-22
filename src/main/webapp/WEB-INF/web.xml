@@ -25,12 +25,12 @@
   </filter-mapping>
   <servlet>
     <description></description>
-    <display-name>ServletUsuarioController</display-name>
-    <servlet-name>ServletUsuarioController</servlet-name>
-    <servlet-class>servlets.ServletUsuarioController</servlet-class>
+    <display-name>ServletTelefone</display-name>
+    <servlet-name>ServletTelefone</servlet-name>
+    <servlet-class>servlets.ServletTelefone</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>ServletUsuarioController</servlet-name>
-    <url-pattern>/ServletUsuarioController</url-pattern>
+    <servlet-name>ServletTelefone</servlet-name>
+    <url-pattern>/ServletTelefone</url-pattern>
   </servlet-mapping>
 </web-app>

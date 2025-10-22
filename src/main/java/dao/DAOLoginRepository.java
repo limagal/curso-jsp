@@ -13,6 +13,7 @@ public class DAOLoginRepository {
 	private Connection connection;
 
 	public DAOLoginRepository() {
+		
 		connection = SingleConnectionBanco.getConnection();
 
 	}

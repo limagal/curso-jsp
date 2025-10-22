@@ -5,12 +5,13 @@ import java.sql.DriverManager;
 
 public class SingleConnectionBanco {
 
-	
-	private static String banco = "jdbc:postgresql://localhost:5432/curso-jspautoReconnect=true";
+	private static String banco = "jdbc:postgresql://localhost:5432/curso-jsp?autoReconnect=true";
 	private static String user = "postgres";
 	private static String password = "yyz0910";
 	private static Connection connection = null;
+	
 	public static Connection getConnection() {
+	
 		return connection;
 	}
 
@@ -26,10 +27,10 @@ public class SingleConnectionBanco {
 		try {
 
 			if (connection == null) {
-				Class.forName("org.postgresql.Driver"); // carrega o drive de conexão do banco
+				Class.forName("org.postgresql.Driver");
 				connection = DriverManager.getConnection(banco, user, password);
 				connection.setAutoCommit(false); // para não efetuar operações no banco sem solicitar.
-				System.out.println("Conectou");
+				System.out.println("Conectou...passou");
 			}
 
 		} catch (Exception e) {
